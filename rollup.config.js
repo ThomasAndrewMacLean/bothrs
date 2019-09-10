@@ -5,7 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy-assets';
 import cleaner from 'rollup-plugin-cleaner';
-import execute from 'rollup-plugin-execute';
+// import execute from 'rollup-plugin-execute';
 
 const production = !process.env.ROLLUP_WATCH;
 

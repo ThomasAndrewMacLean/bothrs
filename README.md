@@ -18,3 +18,6 @@
 - run surge token in terminal 
 - add SURGE_LOGIN with email address in travis
 - add SURGE_TOKEN with the token generated
+- add build and deployment to travis.yml
+
+`if you've got the travis cli installed you can run travis lint .travis.yml to check the yml file`
