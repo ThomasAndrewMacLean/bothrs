@@ -1,25 +1,24 @@
 {
-  "name": "bothrs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "keywords": [],
-  "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11",
-    "@storybook/addons": "^5.1.11",
-    "@storybook/svelte": "^5.1.11",
-    "babel-loader": "^8.0.6",
-    "svelte": "^3.12.0",
-    "svelte-loader": "^2.13.6"
-  }
+    "name": "bothrs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
+    },
+    "keywords": [],
+    "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.6.0",
+        "@storybook/addon-actions": "^5.1.11",
+        "@storybook/addon-links": "^5.1.11",
+        "@storybook/addons": "^5.1.11",
+        "@storybook/svelte": "^5.1.11",
+        "babel-loader": "^8.0.6",
+        "svelte": "^3.12.0",
+        "svelte-loader": "^2.13.6"
+    }
 }
