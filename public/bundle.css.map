@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../src/Footer.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n    let year = new Date().getFullYear();\n</script>\n\n<style>\n    footer {\n        position: absolute;\n        bottom: 10px;\n        font-family: monospace;\n        /* background: green; */\n        /* margin: auto; */\n        width: 100%;\n        text-align: center;\n    }\n</style>\n\n<footer>\n    <span>made with ❤️ by</span>\n    <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"mailto:hello@thomasmaclean.be?subject=Hi\">thomasmaclean</a>\n    <span>{year}</span>\n</footer>\n"
+  ],
+  "names": [],
+  "mappings": "AAKI,MAAM,cAAC,CAAC,AACJ,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,SAAS,CAGtB,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,MAAM,AACtB,CAAC"
+}
