@@ -33,12 +33,13 @@ export default {
         copy({
             assets: [
                 // You can include directories
-               // 'src/images',
+                'src/images',
                 // You can also include files
                 //'src/worker.js',
                 'src/index.html',
                 'src/global.css',
                 'src/site.webmanifest',
+                'src/robots.txt'
             ],
         }),
         // create the service worker
