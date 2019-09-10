@@ -5,7 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import copy from 'rollup-plugin-copy-assets';
 import cleaner from 'rollup-plugin-cleaner';
-// import execute from 'rollup-plugin-execute';
+import execute from 'rollup-plugin-execute';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -38,11 +38,11 @@ export default {
                 //'src/worker.js',
                 'src/index.html',
                 'src/global.css',
-                //'src/site.webmanifest',
+                'src/site.webmanifest',
             ],
         }),
         // create the service worker
-    //    execute('workbox generateSW workbox-config.js'),
+        execute('workbox generateSW workbox-config.js'),
 
         // If you have external dependencies installed from
         // npm, you'll most likely need these plugins. In
