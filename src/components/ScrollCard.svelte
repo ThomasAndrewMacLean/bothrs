@@ -1,0 +1,58 @@
+<script>
+    import CardHeader from '../atoms/CardHeader.svelte';
+    import CardWeeklyTopic from '../atoms/CardWeeklyTopic.svelte';
+    import CardButtons from '../atoms/CardButtons.svelte';
+    export let cardTitle = 'Community';
+    export let title = 'Community';
+    export let icon = 'Tips';
+    export let colour = '--fourth-colour';
+    export let cta1 = { title: 'see all' };
+    export let cta2 = { title: 'add topic' };
+    export let topics = [{}, {}, {}, {}];
+</script>
+
+<style>
+    .scroll-wrapper {
+        width: 350px;
+        height: 428px;
+        border-radius: 15px;
+        background: #221f2b;
+        position: relative;
+    }
+
+    h4 {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 26px;
+
+        letter-spacing: -0.532503px;
+        margin: 16px 0 11px 26px;
+    }
+    .topic-slider {
+        padding-left: 17px;
+        margin-right: calc(-1 * var(--margin-slider));
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 9px;
+        overflow: auto;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .topic:last-of-type {
+        padding-right: calc(17px + var(--margin-slider));
+    }
+</style>
+
+<div class="scroll-wrapper">
+    <CardHeader {cardTitle} {title} {icon} {colour} />
+    <h4>This week's topics</h4>
+    <div class="topic-slider">
+        {#each topics as topic}
+            <div class="topic">
+                <CardWeeklyTopic class="topic" />
+            </div>
+        {/each}
+    </div>
+    <CardButtons {cta1} {cta2} />
+
+</div>

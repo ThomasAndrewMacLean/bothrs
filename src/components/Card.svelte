@@ -1,6 +1,7 @@
 <script>
-    import { imagePath } from '../utils/constants';
-    import RoundButton from '../atoms/RoundButton.svelte';
+    import { getImage } from '../utils/helpers';
+    import CardHeader from '../atoms/CardHeader.svelte';
+    import CardButtons from '../atoms/CardButtons.svelte';
 
     export let cardTitle;
     export let icon;
@@ -24,19 +25,7 @@
         border-radius: 15px;
         position: relative;
     }
-    h3 {
-        font-size: 22px;
-        line-height: 26px;
-        display: flex;
-        align-items: center;
-        margin-left: 11px;
-    }
-    .card-header {
-        position: absolute;
-        left: 4.57%;
-        top: 5.18%;
-        display: flex;
-    }
+
     img {
         position: absolute;
         bottom: 52px;
@@ -69,48 +58,16 @@
         line-height: 19px;
         z-index: 1;
     }
-    .button-wrap {
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-        display: flex;
-    }
-    button {
-        width: 50%;
-        height: 52px;
-
-        font-family: inherit;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        border: none;
-        background: none;
-        display: block;
-        color: inherit;
-        letter-spacing: -0.387275px;
-    }
-
-    button:first-of-type {
-        border-right: 4px solid #292533;
-    }
 </style>
 
 <article>
-    <div class="card-header">
-        <RoundButton {title} {icon} {colour} size="small" />
-        <h3>{cardTitle}</h3>
-    </div>
+    <CardHeader {cardTitle} {title} {icon} {colour} />
     <h4>{title}</h4>
     <p>
         {@html excerpt}
     </p>
-    <img src={'./' + imagePath + image + '.jpg'} alt="" />
+    <img src={getImage(image)} alt="" />
 
-    <div class="button-wrap">
-        <button>{cta1.title}</button>
-        <button>{cta2.title}</button>
-    </div>
+    <CardButtons {cta1} {cta2} />
 
 </article>

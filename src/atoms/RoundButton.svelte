@@ -1,5 +1,5 @@
 <script>
-    import { iconPath } from '../utils/constants';
+    import { getIcon } from '../utils/helpers';
 
     export let title;
     export let icon;
@@ -44,7 +44,7 @@
 
 <div class={size + ' wrapper'}>
     <button class={size} {title} style={'background:var(' + colour + ')'}>
-        <img src={'./' + iconPath + icon + '.svg'} alt="" />
+        <img src={getIcon(icon)} alt="" />
     </button>
     {#if size !== 'small'}
         <label for={title}>{title}</label>
