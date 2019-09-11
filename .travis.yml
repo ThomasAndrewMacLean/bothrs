@@ -14,13 +14,13 @@ deploy:
     skip-cleanup: true 
     github-token: $GITHUB_TOKEN # Will take the environment variable you created on step 5
     local_dir: storybook-static # The folder that needs to be deployed
-    repo: ThomasAndrewMacLean/bothrs # Add your username/project_name here
+    repo: ThomasAndrewMacLean/patient-companion-app # Add your username/project_name here
     target_branch: gh-pages # Tell Travis to deploy on the gh-pages branch
     on:
       branch: master # Tell Travis to trigger a deploy only when we push to master
   - provider: surge
     project: './public/'
-    domain: https://thomasbothrs.surge.sh
+    domain: https://patientcompanionapp.surge.sh
     skip_cleanup: true
     on:
         branch: master
