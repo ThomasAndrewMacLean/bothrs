@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-colour: #612df6;
+    --quart-colour: #77afba;
+    --tertiary-colour: #52d1b7;
+    --red-colour: #ff5660;
+    --fourth-colour: #eb498a;
+    --primary-dark-colour: #4d24c5;
+}

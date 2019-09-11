@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ThomasAndrewMacLean/bothrs.svg?branch=master)](https://travis-ci.org/ThomasAndrewMacLean/bothrs)
+[![Build Status](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app.svg?branch=master)](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app)
 
 # Progress
 
