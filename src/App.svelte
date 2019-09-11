@@ -1,6 +1,9 @@
 <script>
   import Footer from "./components/Footer.svelte";
+  import QuickActions from "./components/QuickActions.svelte";
+  import Header from "./components/Header.svelte";
 </script>
 
-<h1>Hello world!</h1>
+<Header name="Thomas" />
+<QuickActions />
 <Footer />

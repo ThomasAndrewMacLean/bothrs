@@ -4,7 +4,6 @@ import { withA11y } from '@storybook/addon-a11y';
 
 // apply global styles
 import '../src/global.css';
-
 // add a11y plugin
 addDecorator(withA11y);
 
