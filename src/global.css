@@ -20,10 +20,12 @@ ul {
     --fourth-colour: #eb498a;
     --primary-dark-colour: #4d24c5;
 
+    --nav-colour:#ababab;
+    --nav-focus-colour:#52D1B7;
+
     --text-colour: #ffffff;
     --text-darker-colour: rgba(255, 255, 255, 0.7);
 
-    --fontsize-big:
 }
 
 html {
