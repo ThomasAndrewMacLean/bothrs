@@ -1,5 +1,10 @@
-import { configure } from '@storybook/svelte';
+import { configure, addDecorator } from '@storybook/svelte';
 
+import { withA11y } from '@storybook/addon-a11y';
+
+addDecorator(withA11y)
+
+// addParameters({ viewport: { viewports: 'iphone6' } });
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /\.stories\.js$/);
 function loadStories() {
