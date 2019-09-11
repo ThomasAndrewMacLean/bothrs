@@ -21,3 +21,8 @@
 - add build and deployment to travis.yml
 
 `if you've got the travis cli installed you can run travis lint .travis.yml to check the yml file`
+
+## Svelte
+- used these plugins for vscode
+    - fivethree.vscode-svelte-snippets
+    - jamesbirtles.svelte-vscode

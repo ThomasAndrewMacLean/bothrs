@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 :root {
+    --background-colour: #17161c;
+
     --primary-colour: #612df6;
     --quart-colour: #77afba;
     --tertiary-colour: #52d1b7;
     --red-colour: #ff5660;
     --fourth-colour: #eb498a;
     --primary-dark-colour: #4d24c5;
+
+    --text-colour: #ffffff;
+    --text-darker-colour: rgba(255, 255, 255, 0.7);
+
+    --fontsize-big:
+}
+
+html {
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+    font-family: 'Lato', sans-serif;
 }

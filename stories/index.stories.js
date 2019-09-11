@@ -1,27 +1,22 @@
 import { storiesOf } from '@storybook/svelte';
-import { action } from '@storybook/addon-actions';
 
-import Button from './button.svelte';
-import Footer from '../src/components/Footer.svelte'
+import Footer from '../src/components/Footer.svelte';
+import Header from '../src/components/Header.svelte';
 
+storiesOf('Header', module)
+    .add('Stef', () => ({
+        Component: Header,
+        props: { name: 'Stef' },
+    }))
+    .add('Gil', () => ({
+        Component: Header,
+        props: { name: 'Gil' },
+    }))
+    .add('Thomas', () => ({
+        Component: Header,
+        props: { name: 'Thomas' },
+    }));
 
-
-storiesOf('Button', module)
-  .add('with text', () => ({
-    Component: Button,
-    props: { text: 'Hello Button' },
-    on: { click: action('clicked') },
-  }))
-  .add('with some emoji', () => ({
-    Component: Button,
-    props: {
-      text: '😀 😎 👍 💯',
-    },
-    on: { click: action('clicked') },
-  }));
-
-  storiesOf('Footer', module)
-  .add('with text', () => ({
+storiesOf('Footer', module).add('with text', () => ({
     Component: Footer,
-  }))
- 
+}));
