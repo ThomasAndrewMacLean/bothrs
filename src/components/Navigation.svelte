@@ -41,7 +41,7 @@
     .focus {
         fill: var(--nav-focus-colour);
         position: relative;
-        cursor: none;
+        cursor: initial;
     }
 
     .focus::after {
