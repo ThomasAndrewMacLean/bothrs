@@ -10,9 +10,13 @@ ul {
     list-style: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 :root {
     --background-colour: #17161c;
-
+    --background-card-colour: #2d2938;
     --primary-colour: #612df6;
     --quart-colour: #77afba;
     --tertiary-colour: #52d1b7;
@@ -20,8 +24,8 @@ ul {
     --fourth-colour: #eb498a;
     --primary-dark-colour: #4d24c5;
 
-    --nav-colour:#ababab;
-    --nav-focus-colour:#52D1B7;
+    --nav-colour: #ababab;
+    --nav-focus-colour: #52D1B7;
 
     --text-colour: #ffffff;
     --text-darker-colour: rgba(255, 255, 255, 0.7);
