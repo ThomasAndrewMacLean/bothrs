@@ -36,10 +36,12 @@
     }
     li {
         fill: var(--nav-colour);
+        cursor: pointer;
     }
     .focus {
         fill: var(--nav-focus-colour);
         position: relative;
+        cursor: none;
     }
 
     .focus::after {
