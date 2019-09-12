@@ -49,6 +49,9 @@
         white-space: nowrap;
         margin-bottom: 17px;
     }
+    ul::-webkit-scrollbar {
+        width: 0 !important;
+    }
 </style>
 
 <ul>

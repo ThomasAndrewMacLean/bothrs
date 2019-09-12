@@ -41,6 +41,9 @@
         cursor: pointer;
         -webkit-overflow-scrolling: touch;
     }
+    .topic-slider::-webkit-scrollbar {
+        width: 0 !important;
+    }
     .topic:last-of-type {
         padding-right: calc(17px + var(--margin-slider));
     }
