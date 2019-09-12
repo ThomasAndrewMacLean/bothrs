@@ -24,5 +24,7 @@ deploy:
     skip_cleanup: true
     on:
         branch: master
+        
+# Send notification to slack
 notifications:
   slack: $SLACK_TOKEN
