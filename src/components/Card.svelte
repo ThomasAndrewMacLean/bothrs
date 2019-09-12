@@ -54,7 +54,7 @@
         font-style: normal;
         left: 25px;
         top: 117px;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 16px;
         letter-spacing: -0.532503px;
         line-height: 19px;
