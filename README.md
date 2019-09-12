@@ -27,6 +27,10 @@
     - fivethree.vscode-svelte-snippets
     - jamesbirtles.svelte-vscode
 
+## Random things
+- https://www.ruggenberg.nl/titels.html
+- https://uinames.com/
+- https://hipsum.co/
 
 ## links
 

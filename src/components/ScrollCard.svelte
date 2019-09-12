@@ -52,7 +52,7 @@
     <div class="topic-slider">
         {#each topics as topic}
             <div class="topic">
-                <CardWeeklyTopic class="topic" />
+                <CardWeeklyTopic title={topic.title} author={topic.author} date={topic.date} excerpt={topic.text} />
             </div>
         {/each}
     </div>
