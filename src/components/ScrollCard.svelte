@@ -4,7 +4,7 @@
     import CardButtons from '../atoms/CardButtons.svelte';
     export let cardTitle = 'Community';
     export let title = 'Community';
-    export let icon = 'Tips';
+    export let icon = 'tips';
     export let colour = '--fourth-colour';
     export let cta1 = { title: 'see all' };
     export let cta2 = { title: 'add topic' };
