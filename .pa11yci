@@ -3,6 +3,6 @@
 		"timeout": 1000
 	},
 	"urls": [
-		"http://localhost:5000",
+		"https://imgine.surge.sh",
 	]
 }
