@@ -37,6 +37,7 @@
         overflow: auto;
         white-space: nowrap;
         cursor: pointer;
+        -webkit-overflow-scrolling: touch;
     }
     .topic:last-of-type {
         padding-right: calc(17px + var(--margin-slider));
