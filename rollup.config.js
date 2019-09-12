@@ -38,6 +38,7 @@ export default {
                 // You can also include files
                 //'src/worker.js',
                 'src/index.html',
+                'src/200.html',
                 'src/global.css',
                 'src/site.webmanifest',
                 'src/robots.txt',
