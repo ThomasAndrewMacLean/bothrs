@@ -26,5 +26,5 @@ deploy:
         branch: master
         
 # Send notification to slack
-notifications:
-  slack: $SLACK_TOKEN
+#notifications:
+#  slack: $SLACK_TOKEN
