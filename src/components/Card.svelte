@@ -24,6 +24,7 @@
         background: var(--background-card-colour);
         border-radius: 15px;
         position: relative;
+        margin: auto;
     }
 
     img {
