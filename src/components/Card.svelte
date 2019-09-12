@@ -5,7 +5,7 @@
 
     export let cardTitle;
     export let icon;
-    export let colour;
+    //export let colour;
 
     export let image;
 
@@ -63,7 +63,7 @@
 </style>
 
 <article>
-    <CardHeader {cardTitle} {title} {icon} {colour} />
+    <CardHeader {cardTitle} {title} {icon} />
     <h4>{title}</h4>
     <p>
         {@html excerpt}

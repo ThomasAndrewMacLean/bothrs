@@ -1,9 +1,14 @@
 <script>
     import { getIcon } from '../utils/helpers';
+    import { colourMap } from '../utils/constants';
 
     export let title;
     export let icon;
     export let colour;
+
+    if (!colour) {
+        colour = colourMap[icon];
+    }
     export let size;
 </script>
 

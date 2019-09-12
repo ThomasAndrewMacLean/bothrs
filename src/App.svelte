@@ -12,13 +12,13 @@
     let loadedData = false;
 
     let community = [];
+    let tipOfTheDay = null;
     const getData = async () => {
         const rawData = await fetch(databaseUrl);
         const data = await rawData.json();
 
-        console.log(data);
-
         community = data.filter(d => d.category === 'community');
+        tipOfTheDay = data.find(d => d.category === 'tip');
         loadedData = true;
     };
 
@@ -30,7 +30,14 @@
 
     <QuickActions />
     {#if loadedData}
-        <Card cardTitle="Tip of the day" icon="tips" colour="--quart-colour" image="food" />
+        {#if tipOfTheDay}
+            <Card
+                cardTitle="Tip of the day"
+                icon="tips"
+                title={tipOfTheDay.title}
+                excerpt={tipOfTheDay.text}
+                image={tipOfTheDay.image} />
+        {/if}
         <ScrollCard topics={community} />
         <Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
         <Navigation />
