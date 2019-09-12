@@ -18,6 +18,7 @@
         border-radius: 15px;
         background: #221f2b;
         position: relative;
+        margin: auto;
     }
 
     h4 {
