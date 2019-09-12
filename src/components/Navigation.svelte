@@ -28,6 +28,9 @@
 </script>
 
 <style>
+    nav {
+        width: 100%;
+    }
     ul {
         display: flex;
         width: 100%;
