@@ -5,20 +5,28 @@
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Patient Companion App</title>
+    <title>iMGine</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
 
 
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="manifest" href="./site.webmanifest">
-    <meta name="Description" content="patient-companion-app">
+    <meta name="Description" content="Keep track of your health and ask questions  to experts. ">
     <meta name="theme-color" content="#17161c" />
     <!-- CODELAB: Add iOS meta tags and icons -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Tile-Slider">
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@TheBothrs" />
+    <meta name="twitter:creator" content="@TheBothrs" />
+    <meta property="og:title" content="iMGine" />
+    <meta property="og:url" content="https://patientcompanionapp.surge.sh/" />
+    <meta property="og:description" content="Keep track of your health and ask questions  to experts.">
+    <meta property="og:image" content="https://patientcompanionapp.surge.sh/images/android-chrome-192x192.png">
 
 </head>
 
@@ -38,17 +46,8 @@
                     console.error('SW registration failed! 😱', err)
                 }
             )
-        })
-        
-        window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 76 and later from showing the mini-infobar
-  // e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-            
-            console.log("beforeinstallprompt called?")
-  //showInstallPromotion();
-});
+        });
+    
     </script>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="bundle.css">
