@@ -9,6 +9,7 @@
     import CardWeeklyTopic from './atoms/CardWeeklyTopic.svelte';
 </script>
 
+<main>
 <Header name="Thomas" />
 <QuickActions />
 <br />
@@ -20,3 +21,4 @@
 <br />
 
 <Navigation />
+</main>
