@@ -1,11 +1,11 @@
 <script>
-    import { getIcon } from '../utils/helpers';
+    import { getIcon, getHumanReadableTime } from '../utils/helpers';
 
     export let title = 'My Disease';
     export let author = 'Dries Droopy';
     export let date = '2019-09-02T16:23:25.000Z';
     //TODO: get number of days/hours from diff with date from airtable
-    let time = '2 days ago';
+    let time = getHumanReadableTime(date);
     export let excerpt =
         'This is a sharing about my recovery from Myasthenia Gravis (MG). This disease started initially from my jaw. When I ate or chew something, I would feel tired soon and then had to stop chewing because I had no strength to do it..';
 </script>
