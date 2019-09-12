@@ -36,7 +36,7 @@ export default {
                 'src/images/',
                 'src/icons',
                 // You can also include files
-                //'src/worker.js',
+                'src/worker.js',
                 'src/index.html',
                 'src/global.css',
                 'src/site.webmanifest',
@@ -44,7 +44,7 @@ export default {
             ],
         }),
         // create the service worker
-        execute('workbox generateSW workbox-config.js'),
+       // execute('workbox generateSW workbox-config.js'),
 
         // If you have external dependencies installed from
         // npm, you'll most likely need these plugins. In
