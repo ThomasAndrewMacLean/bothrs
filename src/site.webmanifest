@@ -1,5 +1,5 @@
 {
-    "name": "Bothrs",
+    "name": "Patientcompanionapp",
     "short_name": "Bothrs",
     "icons": [{
         "src": "/images/android-chrome-192x192.png",
@@ -13,5 +13,6 @@
     "start_url": "./index.html",
     "theme_color": "#612df6",
     "background_color": "#17161c",
-    "display": "standalone"
+    "display": "standalone",
+    "orientation": "portrait-primary"
 }
