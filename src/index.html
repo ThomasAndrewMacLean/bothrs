@@ -19,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Tile-Slider">
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-    
+
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@TheBothrs" />
     <meta name="twitter:creator" content="@TheBothrs" />
@@ -27,7 +27,19 @@
     <meta property="og:url" content="https://imgine.surge.sh/" />
     <meta property="og:description" content="Keep track of your health and ask questions  to experts.">
     <meta property="og:image" content="https://imgine.surge.sh/images/android-chrome-192x192.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110018468-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110018468-13');
+    </script>
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <body>
@@ -47,9 +59,7 @@
                 }
             )
         });
-    
     </script>
-    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="bundle.css">
     <script src="bundle.js"></script>
     <noscript>Please turn on javascript.</noscript>
