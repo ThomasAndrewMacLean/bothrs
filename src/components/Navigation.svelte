@@ -30,6 +30,7 @@
 <style>
     nav {
         width: 100%;
+        margin-bottom: 47px;
     }
     ul {
         display: flex;
