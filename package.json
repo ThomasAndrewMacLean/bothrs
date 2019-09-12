@@ -19,7 +19,6 @@
     "license": "MIT",
     "dependencies": {},
     "devDependencies": {
-        "pa11y-ci": "~1.0",
         "@babel/core": "^7.6.0",
         "@storybook/addon-a11y": "^5.1.11",
         "@storybook/addon-actions": "^5.1.11",
