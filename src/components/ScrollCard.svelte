@@ -19,6 +19,7 @@
         background: #221f2b;
         position: relative;
         margin: auto;
+        margin-bottom: 17px;
     }
 
     h4 {

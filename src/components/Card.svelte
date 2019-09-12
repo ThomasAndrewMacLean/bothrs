@@ -25,6 +25,7 @@
         border-radius: 15px;
         position: relative;
         margin: auto;
+        margin-bottom: 17px;
     }
 
     img {

@@ -43,7 +43,11 @@
 <style>
     ul {
         display: flex;
-        flex-wrap: wrap;
+        padding-left: 13px;
+        padding-right: 20px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-bottom: 17px;
     }
 </style>
 

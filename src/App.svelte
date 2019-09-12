@@ -10,13 +10,10 @@
 </script>
 
 <main>
-<Header name="Thomas" />
-<QuickActions />
-<br />
-<Card cardTitle="Tip of the day" icon="tips" colour="--quart-colour" image="food" />
-<br />
-<ScrollCard />
-<Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
-    
-<Navigation />
+    <Header name="Thomas" />
+    <QuickActions />
+    <Card cardTitle="Tip of the day" icon="tips" colour="--quart-colour" image="food" />
+    <ScrollCard />
+    <Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
+    <Navigation />
 </main>
