@@ -19,7 +19,7 @@
         border-radius: 6px;
     }
     .header {
-        padding: 18px 20px 18px 19px;
+        padding: 18px 0 18px 19px;
         display: flex;
     }
     h4 {
@@ -31,12 +31,13 @@
     img {
         height: 26px;
         width: 26px;
-        margin-right: 17px;
+        /* margin-right: 17px; */
     }
     .inner {
         display: flex;
         flex-direction: column;
         transform: translateY(-6px);
+        margin-left: 17px;
     }
 
     .author {
@@ -55,6 +56,19 @@
         width: 251px;
         margin-left: 17px;
         white-space: normal;
+        height: 135px;
+        overflow: hidden;
+        position: relative;
+    }
+    p::after {
+        position: absolute;
+        content: '...';
+        background: var(--background-card-colour);
+        bottom: 0;
+        /* z-index: 4; */
+        right: 0px;
+        padding-right: 80px;
+        padding-left: 5px;
     }
 </style>
 
