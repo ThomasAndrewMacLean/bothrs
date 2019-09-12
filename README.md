@@ -26,3 +26,10 @@
 - used these plugins for vscode
     - fivethree.vscode-svelte-snippets
     - jamesbirtles.svelte-vscode
+
+
+## links
+
+- https://docs.travis-ci.com/user/job-lifecycle/
+- https://developers.google.com/speed/pagespeed/insights/
+- https://cruft.io/posts/automated-accessibility-testing-node-travis-ci-pa11y/
