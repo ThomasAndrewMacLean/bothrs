@@ -10,24 +10,37 @@ ul {
     list-style: none;
 }
 
-body{
+body {
     width: 100vw;
+    min-height: 100vh;
     overflow-x: hidden;
+    color: var(--text-colour);
+    font-family: 'Lato', sans-serif;
 }
 
 main {
     width: 100%;
+    max-width: 400px;
+    margin: auto;
+
+    background-color: var(--background-colour);
+
     overflow: hidden;
     /* Iphone X */
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 
     @supports(padding: max(0px)) {
-        padding-bottom: max(12px, env(safe-area-inset-bottom));   
+        padding-bottom: max(12px, env(safe-area-inset-bottom));
     }
 }
 
 button {
     cursor: pointer;
+}
+
+html {
+
+    background: #CFCFCF;
 }
 
 :root {
@@ -47,10 +60,4 @@ button {
     --text-darker-colour: rgba(255, 255, 255, 0.7);
 
     --margin-slider: 100px;
-}
-
-html {
-    background-color: var(--background-colour);
-    color: var(--text-colour);
-    font-family: 'Lato', sans-serif;
 }
