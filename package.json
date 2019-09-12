@@ -11,13 +11,15 @@
         "dev": "run-p start:dev autobuild",
         "start": "sirv public",
         "start:dev": "sirv public --dev",
-        "test": "jest"
+        "test": "jest",
+        "test-pa11y": "./node_modules/.bin/pa11y-ci"
     },
     "keywords": [],
     "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
     "license": "MIT",
     "dependencies": {},
     "devDependencies": {
+        "pa11y-ci": "~1.0",
         "@babel/core": "^7.6.0",
         "@storybook/addon-a11y": "^5.1.11",
         "@storybook/addon-actions": "^5.1.11",
