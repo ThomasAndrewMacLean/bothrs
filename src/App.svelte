@@ -16,9 +16,7 @@
 <Card cardTitle="Tip of the day" icon="tips" colour="--quart-colour" image="food" />
 <br />
 <ScrollCard />
-<br />
-<CardWeeklyTopic />
-<br />
-
+<Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
+    
 <Navigation />
 </main>
