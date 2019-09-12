@@ -25,7 +25,7 @@ deploy:
       branch: master # Tell Travis to trigger a deploy only when we push to master
   - provider: surge
     project: './public/'
-    domain: https://patientcompanionapp.surge.sh
+    domain: https://imgine.surge.sh
     skip_cleanup: true
     on:
         branch: master
