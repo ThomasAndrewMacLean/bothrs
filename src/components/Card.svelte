@@ -28,15 +28,10 @@
     }
 
     img {
-        padding-bottom: 55.1428571429%;
-    }
-
-    .img-wrap{
-        height: 193px;
-        overflow: hidden;
-        postion: absolute;
+        position: absolute;
         bottom: 52px;
     }
+
     h4 {
         position: absolute;
         width: 222px;
@@ -72,9 +67,8 @@
     <p>
         {@html excerpt}
     </p>
-    <div class="img-wrap" style={'background:var(' + colour + ')'}>
-        <img src={getImage(image)} alt="" />
-    </div>
+    <img src={getImage(image)} alt="" />
+
     <CardButtons {cta1} {cta2} />
 
 </article>
