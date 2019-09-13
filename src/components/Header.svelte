@@ -33,9 +33,22 @@
         font-size: 20px;
         line-height: 24px;
     }
+      .w:hover{
+        position:absolute;
+        font-size: 130px;
+        transform-origin: 80px 80px;
+        animation: wave .5s linear 1s infinite alternate;
+    } 
+  
+  @keyframes wave {
+     
+      100% { 
+       transform: rotate(10deg);
+    }
+  }
 </style>
 
 <div class="header-wrap">
-    <h1>Hi {name} 👋</h1>
+    <h1>Hi {name} <span class="w">👋</span></h1>
     <p>How can I help you today?</p>
 </div>
