@@ -33,10 +33,15 @@ storiesOf('Navigation', module).add('Navigation ', () => ({
     Component: Navigation,
 }));
 
-storiesOf('Card', module).add('Card ', () => ({
-    Component: Card,
-    props: { cardTitle: 'Tip of the day', icon: 'tips', colour: '--quart-colour', image: 'food' },
-}));
+storiesOf('Card', module)
+    .add('Card ', () => ({
+        Component: Card,
+        props: { cardTitle: 'Tip of the day', icon: 'tips', colour: '--quart-colour', image: 'food' },
+    }))
+    .add('Skeleton Card ', () => ({
+        Component: Card,
+        props: { cardTitle: 'Tip of the day', icon: 'tips', skeleton: true, colour: '--quart-colour', image: 'food' },
+    }));
 
 storiesOf('ScrollCard', module)
     .add('ScrollCard ', () => ({
