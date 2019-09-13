@@ -33,7 +33,7 @@
         font-size: 20px;
         line-height: 24px;
     }
-      .w:hover{
+      .w:hover, :focus{
         position:absolute;
         font-size: 130px;
         transform-origin: 80px 80px;
