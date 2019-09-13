@@ -7,22 +7,10 @@
     import ScrollCard from './components/ScrollCard.svelte';
 
     import CardWeeklyTopic from './atoms/CardWeeklyTopic.svelte';
-    import { databaseUrl } from './utils/constants';
 
-    let loadedData = false;
-
-    let community = [];
-    let tipOfTheDay = null;
-    const getData = async () => {
-        const rawData = await fetch(databaseUrl);
-        const data = await rawData.json();
-
-        community = data.filter(d => d.category === 'community');
-        tipOfTheDay = data.find(d => d.category === 'tip');
-        loadedData = true;
-    };
-
-    getData();
+    export let loadedData;
+    export let tipOfTheDay;
+    export let communityTopics;
 </script>
 
 <main>
@@ -38,7 +26,7 @@
                 excerpt={tipOfTheDay.text}
                 image={tipOfTheDay.image} />
         {/if}
-        <ScrollCard topics={community} />
+        <ScrollCard topics={communityTopics} />
         <Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
         <Navigation />
     {/if}

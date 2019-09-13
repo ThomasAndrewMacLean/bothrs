@@ -11,7 +11,7 @@
             title: 'Tips',
             colour: '--quart-colour',
             icon: 'tips',
-            nav: '#',
+            nav: '/tips',
         },
         {
             title: 'Trials',
@@ -57,7 +57,9 @@
 <ul>
     {#each actions as action}
         <li>
-            <RoundButton title={action.title} icon={action.icon} colour={action.colour} />
+            <a href={action.nav}>
+                <RoundButton title={action.title} icon={action.icon} colour={action.colour} />
+            </a>
         </li>
     {/each}
 
