@@ -12,6 +12,18 @@
 -   npm install
 -   npm run storybook
 
+# Todo
+
+- add aspect ratio hack to images (have a colour while image is loading)
+- cache data using service worker
+- window scroll to top when navigating to other pages
+- create detail page
+- style category page
+- remove cursor pointer from small icons
+- save pictures in airtable
+- add wave easteregg in 👋
+
+
 # Progress
 
 ## Setup Storybook
@@ -43,13 +55,13 @@
     -   fivethree.vscode-svelte-snippets
     -   jamesbirtles.svelte-vscode
 
-## Random things
+# Random things
 
 -   https://www.ruggenberg.nl/titels.html
 -   https://uinames.com/
 -   https://hipsum.co/
 
-## links
+# links
 
 -   https://docs.travis-ci.com/user/job-lifecycle/
 -   https://developers.google.com/speed/pagespeed/insights/
