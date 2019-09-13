@@ -25,9 +25,15 @@
     getData();
 </script>
 
-<!-- App.svelte -->
+<style>
+    .wrapper {
+        background: #bcbcbc;
+    }
+</style>
+
+<!-- TODO: when navigating scroll window to top -->
 <Router {url}>
-    <div>
+    <div class="wrapper">
         <Route path="tips">
             <Tips {loadedData} {tips} />
         </Route>

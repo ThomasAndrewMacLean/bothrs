@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     color: var(--text-colour);
     font-family: 'Lato', sans-serif;
-background-color: var(--background-colour);
+    background-color: var(--background-colour);
 }
 
 main {
@@ -31,11 +31,15 @@ main {
     background-color: var(--background-colour);
 
     overflow: hidden;
-    /* Iphone X */
-    padding: 0px env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    /* padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); */
+}
 
-    @supports(padding: max(0px)) {
-        padding-bottom: max(12px, env(safe-area-inset-bottom));
+/* Iphone X */
+#bottom-navigation {
+    padding: 20px;
+
+    @supports (padding: max(0px)) {
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
     }
 }
 
@@ -45,7 +49,7 @@ button {
 
 html {
 
-   background-color: var(--background-colour);
+    background-color: var(--background-colour);
 
 }
 

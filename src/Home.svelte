@@ -18,6 +18,9 @@
         filter: grayscale(0.7);
         transition: filter 300ms cubic-bezier(0.61, 1.06, 1, 1);
     }
+    main {
+        margin-bottom: 100px;
+    }
 </style>
 
 <main class={!loadedData ? 'loadingData' : ''}>
@@ -35,9 +38,9 @@
         {/if}
         <ScrollCard topics={communityTopics} />
         <Card cardTitle="MG Update" icon="atom" colour="--primary-colour" image="stress" />
-        <Navigation />
     {:else}
         <Card cardTitle="" icon="tips" title="" excerpt="" image="" skeleton={true} />
         <Card cardTitle="" icon="atom" title="" excerpt="" image="" skeleton={true} />
     {/if}
+    <Navigation />
 </main>

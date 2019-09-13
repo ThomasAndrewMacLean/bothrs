@@ -30,7 +30,13 @@
 <style>
     nav {
         width: 100%;
-        margin-bottom: 47px;
+        max-width: 430px;
+        margin: auto;
+        position: fixed;
+        /* margin-bottom: 47px; */
+        bottom: -1px;
+        z-index: 10;
+        background: var(--background-colour);
     }
     ul {
         display: flex;
@@ -60,7 +66,7 @@
     }
 </style>
 
-<nav>
+<nav id="bottom-navigation">
     <ul>
         {#each navItems as navItem}
             <li class={focused === navItem.title ? 'focus' : ''} on:click={() => (focused = navItem.title)}>
