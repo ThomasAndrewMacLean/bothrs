@@ -21,8 +21,11 @@
 - style category page
 - remove cursor pointer from small icons
 - save pictures in airtable
-- add wave easteregg in 👋
-
+- add background to icon for homescreen
+- create checklist (PWA, social share)
+- run a11y test (integrate in CI?)
+- check why lighthouse PWA is not working
+ 
 
 # Progress
 
