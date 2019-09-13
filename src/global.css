@@ -31,7 +31,7 @@ main {
 
     overflow: hidden;
     /* Iphone X */
-    padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    padding: 0px env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 
     @supports(padding: max(0px)) {
         padding-bottom: max(12px, env(safe-area-inset-bottom));
