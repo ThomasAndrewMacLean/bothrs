@@ -45,11 +45,14 @@
         width: 34px;
         height: 34px;
     }
+    img.small {
+        height: 20px;
+    }
 </style>
 
 <div class={size + ' wrapper'}>
     <button class={size} {title} style={'background:var(' + colour + ')'}>
-        <img src={getIcon(icon)} alt="" />
+        <img class={size} src={getIcon(icon)} alt={icon} />
     </button>
     {#if size !== 'small'}
         <label for={title}>{title}</label>
