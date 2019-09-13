@@ -35,8 +35,7 @@
     }
       .w:hover, :focus{
         position:absolute;
-        font-size: 130px;
-        transform-origin: 80px 80px;
+        transform-origin: 40px 40px;
         animation: wave .5s linear 1s infinite alternate;
     } 
   
