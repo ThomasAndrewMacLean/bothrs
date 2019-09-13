@@ -13,7 +13,7 @@
 
 <style>
     .scroll-wrapper {
-        width: 350px;
+        max-width: 350px;
         height: 428px;
         border-radius: 15px;
         background: #221f2b;
