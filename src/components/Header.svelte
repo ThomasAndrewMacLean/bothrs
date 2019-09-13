@@ -33,11 +33,15 @@
         font-size: 20px;
         line-height: 24px;
     }
-      .w:hover, :focus{
+    .w  {
+        position: absolute;
+        margin-left: 7px;
+    }
+    .w:hover, :focus{
         position:absolute;
         transform-origin: 40px 40px;
         animation: wave .5s linear 1s infinite alternate;
-    } 
+        } 
   
   @keyframes wave {
      
