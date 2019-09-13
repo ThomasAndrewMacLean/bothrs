@@ -13,6 +13,7 @@
     export let excerpt =
         'If you struggle with swallowing, eat soft<br/> foods wherever possible. You can check out some of our soft food recipes for ideas here.';
 
+    export let skeleton = false;
     export let cta1 = { title: 'see all' };
     export let cta2 = { title: 'explore tip' };
 </script>
@@ -26,6 +27,11 @@
         position: relative;
         margin: auto;
         margin-bottom: 17px;
+        /* transition: all 1s ease-in; */
+    }
+
+    article.skeleton {
+        filter: blur(2px);
     }
 
     img {
@@ -62,14 +68,15 @@
     }
 </style>
 
-<article>
+<article class={skeleton ? 'skeleton' : ''}>
     <CardHeader {cardTitle} {title} {icon} />
-    <h4>{title}</h4>
-    <p>
-        {@html excerpt}
-    </p>
-    <img src={getImage(image)} alt="" />
-
-    <CardButtons {cta1} {cta2} />
+    {#if !skeleton}
+        <h4>{title}</h4>
+        <p>
+            {@html excerpt}
+        </p>
+        <img src={getImage(image)} alt="" />
+        <CardButtons {cta1} {cta2} />
+    {/if}
 
 </article>

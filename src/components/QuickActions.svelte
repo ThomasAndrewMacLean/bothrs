@@ -1,4 +1,6 @@
 <script>
+    import { links } from 'svelte-routing';
+
     import RoundButton from '../atoms/RoundButton.svelte';
     const actions = [
         {
@@ -38,6 +40,7 @@
             nav: '#',
         },
     ];
+    export let loadedData = true;
 </script>
 
 <style>
@@ -49,12 +52,15 @@
         white-space: nowrap;
         margin-bottom: 17px;
     }
+    ul.skeleton {
+        pointer-events: none;
+    }
     ul::-webkit-scrollbar {
         width: 0 !important;
     }
 </style>
 
-<ul>
+<ul use:links class={!loadedData ? 'skeleton' : ''}>
     {#each actions as action}
         <li>
             <a href={action.nav}>

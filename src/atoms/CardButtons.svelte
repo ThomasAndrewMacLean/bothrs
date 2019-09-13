@@ -1,4 +1,6 @@
 <script>
+    import { links } from 'svelte-routing';
+
     export let cta1;
     export let cta2;
 </script>
@@ -32,9 +34,19 @@
     button:first-of-type {
         border-right: 1px solid #292533;
     }
+    a {
+        color: inherit;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 
-<div class="button-wrap">
-    <button>{cta1.title}</button>
+<div use:links class="button-wrap">
+    <button>
+        <a href="/tips">{cta1.title}</a>
+    </button>
     <button>{cta2.title}</button>
 </div>
