@@ -31,6 +31,9 @@
         <Route path="tips">
             <Tips {loadedData} {tips} />
         </Route>
+        <Route path="home">
+            <Home {communityTopics} {loadedData} {tipOfTheDay} />
+        </Route>
         <Route path="/">
             <Home {communityTopics} {loadedData} {tipOfTheDay} />
         </Route>
