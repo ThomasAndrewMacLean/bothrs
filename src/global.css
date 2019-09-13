@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     color: var(--text-colour);
     font-family: 'Lato', sans-serif;
-    background: #CFCFCF;
+background-color: var(--background-colour);
 }
 
 main {
