@@ -25,7 +25,7 @@
 - create checklist (PWA, social share)
 - run a11y test (integrate in CI?)
 - check why lighthouse PWA is not working
- 
+- resize images for srcset
 
 # Progress
 
