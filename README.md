@@ -1,5 +1,17 @@
 [![Build Status](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app.svg?branch=master)](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app)
 
+# Run locally
+
+## App
+
+- npm install
+- npm run dev (hot reloading)
+
+## Storybook
+
+- npm install
+- npm run storybook
+
 # Progress
 
 ## Setup Storybook
