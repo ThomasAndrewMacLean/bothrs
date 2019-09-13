@@ -20,7 +20,7 @@
 
 <style>
     article {
-        width: 350px;
+        max-width: 350px;
         height: 309px;
         background: var(--background-card-colour);
         border-radius: 15px;
