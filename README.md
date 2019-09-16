@@ -3,6 +3,8 @@
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://thomasandrewmaclean.github.io/patient-companion-app/)
 
 
+![image](https://user-images.githubusercontent.com/31767869/64984923-150eec80-d8c4-11e9-8b0e-87be04b11b8b.png)
+
 
 
 # Run locally
