@@ -26,6 +26,8 @@
     button.small {
         height: 34px;
         width: 34px;
+        cursor: auto;
+        pointer-events: none;
     }
     label {
         color: #bebebe;

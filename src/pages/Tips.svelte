@@ -1,7 +1,7 @@
 <script>
-    import Navigation from './components/Navigation.svelte';
-    import Card from './components/Card.svelte';
-    import CategoryHeader from './atoms/CategoryHeader.svelte';
+    import Navigation from '../components/Navigation.svelte';
+    import Card from '../components/Card.svelte';
+    import CategoryHeader from '../atoms/CategoryHeader.svelte';
 
     export let loadedData;
     export let tips;

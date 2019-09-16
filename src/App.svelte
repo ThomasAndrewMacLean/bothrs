@@ -2,8 +2,8 @@
     import { Router, Link, Route } from 'svelte-routing';
     import { databaseUrl } from './utils/constants';
 
-    import Home from './Home.svelte';
-    import Tips from './Tips.svelte';
+    import Home from './pages/Home.svelte';
+    import Tips from './pages/Tips.svelte';
 
     export let url = '';
 
@@ -37,10 +37,13 @@
         <Route path="tips">
             <Tips {loadedData} {tips} />
         </Route>
-        <Route path="home">
+        <Route path="/home">
             <Home {communityTopics} {loadedData} {tipOfTheDay} />
         </Route>
         <Route path="/">
+            <Home {communityTopics} {loadedData} {tipOfTheDay} />
+        </Route>
+        <Route path="/index.html">
             <Home {communityTopics} {loadedData} {tipOfTheDay} />
         </Route>
     </div>

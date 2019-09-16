@@ -1,12 +1,12 @@
 <script>
-    import Footer from './components/Footer.svelte';
-    import QuickActions from './components/QuickActions.svelte';
-    import Header from './components/Header.svelte';
-    import Navigation from './components/Navigation.svelte';
-    import Card from './components/Card.svelte';
-    import ScrollCard from './components/ScrollCard.svelte';
+    import Footer from '../components/Footer.svelte';
+    import QuickActions from '../components/QuickActions.svelte';
+    import Header from '../components/Header.svelte';
+    import Navigation from '../components/Navigation.svelte';
+    import Card from '../components/Card.svelte';
+    import ScrollCard from '../components/ScrollCard.svelte';
 
-    import CardWeeklyTopic from './atoms/CardWeeklyTopic.svelte';
+    import CardWeeklyTopic from '../atoms/CardWeeklyTopic.svelte';
 
     export let loadedData;
     export let tipOfTheDay;
