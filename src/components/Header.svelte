@@ -7,7 +7,7 @@
     } else {
         const urlParams = new URLSearchParams(window.location.search);
         const nameFromUrl = urlParams.get('name');
-        console.log(nameFromUrl);
+        // console.log(nameFromUrl);
 
         if (nameFromUrl) {
             name = nameFromUrl;
