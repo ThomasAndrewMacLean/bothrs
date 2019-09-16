@@ -60,7 +60,7 @@
     }
 </style>
 
-<ul use:links class={!loadedData ? 'skeleton' : ''}>
+<ul id="quick-actions" use:links class={!loadedData ? 'skeleton' : ''}>
     {#each actions as action}
         <li>
             <a href={action.nav}>

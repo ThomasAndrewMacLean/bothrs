@@ -28,7 +28,7 @@
 </script>
 
 <style>
-    nav {
+    #bottom-navigation {
         width: 100%;
         max-width: 430px;
         margin: auto;
