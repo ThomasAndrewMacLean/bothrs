@@ -2,10 +2,11 @@
     import { getImage } from '../utils/helpers';
     import CardHeader from '../atoms/CardHeader.svelte';
     import CardButtons from '../atoms/CardButtons.svelte';
+    import { colourMap } from '../utils/constants';
 
     export let cardTitle;
     export let icon;
-    //export let colour;
+    const colour = colourMap[icon];
 
     export let image;
 
@@ -34,9 +35,14 @@
         filter: blur(2px);
     }
 
-    img {
+    .img-wrap {
         position: absolute;
-        bottom: 52px;
+        /* bottom: 52px; */
+        overflow: hidden;
+        height: 193px;
+    }
+    img {
+        padding-bottom: 193px;
     }
 
     h4 {
@@ -75,7 +81,9 @@
         <p>
             {@html excerpt}
         </p>
-        <img src={getImage(image)} alt="" />
+        <div class="img-wrap" style={'background:var(' + colour + ')'}>
+            <img src={getImage(image)} alt="" />
+        </div>
         <CardButtons {cta1} {cta2} />
     {/if}
 
