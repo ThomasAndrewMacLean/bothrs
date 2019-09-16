@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app.svg?branch=master)](https://travis-ci.org/ThomasAndrewMacLean/patient-companion-app)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/56d2b618-02e3-4f98-9184-7bcbc08e8454/deploy-status)](https://app.netlify.com/sites/imgine/deploys)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://thomasandrewmaclean.github.io/patient-companion-app/)
+![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m783447295-f2c97dc03a3971cd8a210cf4.svg)
 
 
 ![image](https://user-images.githubusercontent.com/31767869/64984923-150eec80-d8c4-11e9-8b0e-87be04b11b8b.png)
